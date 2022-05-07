@@ -1,0 +1,54 @@
+﻿@model MyPupils.Models.Tolovlar
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Tolovlar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sana)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sana)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id5)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
